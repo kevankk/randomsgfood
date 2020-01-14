@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.wrapper {
+  text-align: center
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid navy;
+  border-radius: 10px;
+  font-size: 24px;
+  background-color: navy;
+  color: white;
+  outline: none;
+}
+
+.buttonEnded{
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid maroon;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: maroon;
+  color: white;
+  outline: none;  
+}
+
+.button:hover {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 128, 0.8);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 128, 0.8);
+  color: white; 
+  outline: none;
+}
+
+.pEnded {
+  font-family: Helvetica;
+  font-weight: lighter;
+}
+
+.foodType {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: Helvetica;
+  margin-top: 10px;
+}
+
+.foodWrapper {
+  height: 300px;
+  width: 380px;
+  border-radius: 5px  
+}
+
+.foodName {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.background{
+  background-image: url("./imgs/background2.jpg");
+  width: 100%;
+  height: 38%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 38%;
+  background-color: rgb(255,255,255,0.6);
+  margin-top: 30px;
+}
+
+.heading{
+  width: 50%;
+  color: black;
+  font-size: 4.2vw;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .foodWrapper {
+    height: 200px;
+    width: 240px;
+    border-radius: 5px  
+  }
+  
+  .foodType {
+    margin: 0px;
+  }
+  
+  .header{
+    margin-top: 0px;
+  }
+
+  .button {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .buttonEnded {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .button:hover {
+    font-size: 20px;
+    padding: 10px;
+  }
 }
