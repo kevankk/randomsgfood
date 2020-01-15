@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {asian, atas, cheap} from './food.js';
 import Blank from './imgs/Blank.jpg';
+import Image from 'react-image';
 import { findAllByAltText } from '@testing-library/react';
 
 
@@ -200,7 +201,9 @@ class FoodType extends React.Component {
                 <Food />
                 <Tab changeTab = {() => this.changeTab1()} changeTab2= {()=> this.changeTab2()} changeTabCheap = {() => this.changeTabCheap()}tabState = {this.state.tab}/>
                 <p className = 'foodName'>{this.state.word + this.state.food + this.state.question}</p>
-                <img src = {this.state.img} alt = 'food' className = 'foodWrapper'></img>
+                <div className = 'foodWrapper'>
+                <Image src = {this.state.img} className ='foodWrapper' />
+                </div>
                 <Button onClick={() => {
                     this.generateFood(this.state.table, this.randomise())}} 
                     hasEnded={this.state.end} 
