@@ -55,6 +55,7 @@
   border-radius: 5px  
 }
 
+
 .foodName {
   font-size: 24px;
   font-weight: bold;
@@ -115,4 +116,9 @@
     font-size: 20px;
     padding: 10px;
   }
+
+  .foodName {
+    font-size: 18px;
+  }
+
 }
