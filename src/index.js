@@ -150,7 +150,7 @@ class FoodType extends React.Component {
     }
 
     changeTab2(){
-        const fancyAll = ['Oooh.. Fancy Fancy', 'Earn Money Spend Money', 'A little splurge is alright once in a while..', 'Let food be thy medicine and medicine be thy food.', 'What is money if you don\'t spend it on food?', 'Good Food Incoming...']
+        const fancyAll = ['Oooh.. Fancy Fancy', 'Earn Money Spend Money!', 'A little splurge is alright once in a while..', 'Let food be thy medicine and medicine be thy food.', 'What is money if you don\'t spend it on food?', 'Good Food Incoming...']
         const randFancyAll = fancyAll[Math.floor(Math.random() * fancyAll.length)]
         this.setState({
             random: '',
@@ -195,21 +195,21 @@ class FoodType extends React.Component {
         return random;
     }
 
-    render(){
+    render() {
         return (
-            <div className = 'foodType'>
+            <div className='foodType'>
                 <Food />
-                <Tab changeTab = {() => this.changeTab1()} changeTab2= {()=> this.changeTab2()} changeTabCheap = {() => this.changeTabCheap()}tabState = {this.state.tab}/>
-                <p className = 'foodName'>{this.state.word + this.state.food + this.state.question}</p>
-                <div className = 'foodWrapper'>
-                <Image src = {this.state.img} className ='foodWrapper' />
+                <Tab changeTab={() => this.changeTab1()} changeTab2={() => this.changeTab2()} changeTabCheap={() => this.changeTabCheap()} tabState={this.state.tab} />
+                <p className='foodName'>{this.state.word + this.state.food + this.state.question}</p>
+                <div className='foodWrapper'>
+                    <Image src={this.state.img} className='foodWrapper' />
                 </div>
                 <Button onClick={() => {
-                    this.generateFood(this.state.table, this.randomise())}} 
-                    hasEnded={this.state.end} 
+                    this.generateFood(this.state.table, this.randomise())
+                }}
+                    hasEnded={this.state.end}
                     onClick2={() => this.resetState()
-                    }/>
-                
+                    } />
             </div>
         )
     }

@@ -133,7 +133,7 @@
   }
   
   .heading{
-    width: 75%;
+    width: 60%;
   }
   .foodType {
     margin: 0px;
@@ -144,23 +144,27 @@
   }
 
   .button {
-    margin-top:20px;
+    margin-top:50px;
     font-size: 18px;
     padding: 10px;
   }
 
   .buttonEnded {
-    font-size: 20px;
+    font-size: 40px;
     padding: 10px;
   }
 
   .button:hover {
+    margin-top:50px;
     font-size: 18px;
     padding: 10px;
   }
 
   .foodName {
+    display: flex;
+    align-items: center;
     font-size: 18px;
+    height: 50px;
   }
   
 
