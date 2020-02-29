@@ -1,0 +1,32 @@
+.button {
+  padding: 15px;
+  margin-top: 60px;
+  border: 1px solid #011936;
+  border-radius: 10px;
+  font-size: 24px;
+  background-color: #011936;
+  color: white;
+  outline: none;
+  text-decoration: none;
+}
+
+.buttonEnded{
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #5a0002;
+  border-radius: 10px;
+  font-size: 24px;
+  background-color: #5a0002;
+  color: white;
+  outline: none;
+}
+
+.button:hover {
+  padding: 15px;
+  margin-top: 60px;
+  border: 1px solid #465362;
+  border-radius: 10px;
+  background-color: #465362;
+  color: white;
+  outline: none;
+}

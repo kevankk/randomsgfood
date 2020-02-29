@@ -1,0 +1,36 @@
+.tab {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  display: inline-flex;
+  border: 2px solid #011936;
+  border-radius: 5px;
+  margin: 10px 5px 0px 5px;
+  height: 30px;
+}
+
+.tab li {
+  width: 100px;
+  padding: 5px 10px;
+  background: white;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.tab li:hover{
+  background: #a6d8d4;
+  font-weight: bold;
+  cursor: default;
+}
+
+.middleList {
+  border-right: 2px solid #011936;
+  border-left: 2px solid #011936;
+}
+
+
+#active{
+  color: white;
+  background: #011936;
+  font-weight: bold;
+}

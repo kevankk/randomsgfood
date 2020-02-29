@@ -10,7 +10,7 @@ import { findAllByAltText } from '@testing-library/react';
 class Header extends React.Component {
     render() {
         return (
-            <h1 className = 'heading'>Welcome to the Singapore Random Food Generator!</h1>
+            <h1 className = 'heading'>What To Eat?</h1>
         )
     }
 }
@@ -39,7 +39,7 @@ class Food extends React.Component{
 
 class Button extends React.Component {
     render() {
-        return ( 
+        return (
             <div>
             {this.props.hasEnded === false ? <button className="button" onClick = {this.props.onClick}>Generate Food</button> :
             <button className="buttonEnded" onClick = {this.props.onClick2}>Click to Reset!</button>}
@@ -54,28 +54,28 @@ class Tab extends React.Component {
             case 'all':
                 return <ul className = 'tab'>
                         <li id = 'active'>All</li>
-                        <li className='middleList' onClick = {this.props.changeTab2}>Atas</li>
-                        <li onClick = {this.props.changeTabCheap}>Not so Atas</li>
+                        <li className='middleList' onClick = {this.props.changeTab2}>Premium</li>
+                        <li onClick = {this.props.changeTabCheap}>Budget</li>
                      </ul>;
             case 'atas':
                 return <ul className = 'tab'>
                 <li onClick = {this.props.changeTab}>All</li>
-                <li className='middleList' id = 'active'>Atas</li>
-                <li onClick = {this.props.changeTabCheap}>Not so Atas</li>
+                <li className='middleList' id = 'active'>Premium</li>
+                <li onClick = {this.props.changeTabCheap}>Budget</li>
                 </ul>;
             case 'cheap':
                 return <ul className = 'tab'>
                 <li onClick = {this.props.changeTab}>All</li>
-                <li onClick = {this.props.changeTab2} className='middleList'>Atas</li>
-                <li id = 'active'>Not so Atas</li>
+                <li onClick = {this.props.changeTab2} className='middleList'>Premium</li>
+                <li id = 'active'>Budget</li>
                 </ul>;
-            default: 
+            default:
             return <ul className = 'tab'>
                         <li id = 'active'>All</li>
-                        <li className='middleList' onClick = {this.props.changeTab2}>Atas</li>
-                        <li onClick = {this.props.changeTabCheap}>Not so Atas</li>
+                        <li className='middleList' onClick = {this.props.changeTab2}>Premium</li>
+                        <li onClick = {this.props.changeTabCheap}>Budget</li>
                      </ul>;
-        } 
+        }
     }
 
     render(){
@@ -110,7 +110,7 @@ class FoodType extends React.Component {
         const word = Math.floor(Math.random() * words.length);
         return this.setState({
             random: random,
-            food: table[random].name, 
+            food: table[random].name,
             img: table[random].img,
             word: words[word],
             question: '?'
@@ -119,7 +119,7 @@ class FoodType extends React.Component {
 
     resetState() {
         const sentAll = ['Hungry hungry very very...', 'A hungry man is an angry man', 'I can eat a cow right now...', 'There is no love sincerer than the love of food.']
-        const randSentAll = sentAll[Math.floor(Math.random() * sentAll.length)] 
+        const randSentAll = sentAll[Math.floor(Math.random() * sentAll.length)]
         this.setState({
             random: '',
             food: '',
@@ -135,7 +135,7 @@ class FoodType extends React.Component {
 
     changeTab1(){
         const sentAll = ['Hungry hungry very very...', 'A hungry man is an angry man...', 'I can eat a cow right now...', 'There is no love sincerer than the love of food.']
-        const randSentAll = sentAll[Math.floor(Math.random() * sentAll.length)] 
+        const randSentAll = sentAll[Math.floor(Math.random() * sentAll.length)]
         this.setState({
             random: '',
             food: '',
@@ -178,7 +178,7 @@ class FoodType extends React.Component {
             repeated: [],
             tab: 'cheap',
             table: cheap
-        }) 
+        })
     }
 
     randomise(){
