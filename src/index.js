@@ -199,6 +199,7 @@ class FoodType extends React.Component {
         return (
             <div className='foodType'>
                 <Food />
+                <div className = 'main-container'>
                 <Tab changeTab={() => this.changeTab1()} changeTab2={() => this.changeTab2()} changeTabCheap={() => this.changeTabCheap()} tabState={this.state.tab} />
                 <p className='foodName'>{this.state.word + this.state.food + this.state.question}</p>
                 <div className='foodWrapper'>
@@ -210,6 +211,7 @@ class FoodType extends React.Component {
                     hasEnded={this.state.end}
                     onClick2={() => this.resetState()
                     } />
+            </div>
             </div>
         )
     }
